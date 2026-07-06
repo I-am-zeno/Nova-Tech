@@ -47,7 +47,7 @@ function ScrollRow({ items }: { items: typeof products }) {
       <button
         onClick={() => scroll("left")}
         aria-label="Scroll left"
-        className={`absolute left-2 top-1/2 -translate-y-1/2 z-20 hidden lg:flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-[#080808] backdrop-blur-sm text-white/50 hover:text-white hover:border-white/20 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${canScrollLeft ? "pointer-events-auto" : "pointer-events-none opacity-0"}`}
+        className={`absolute left-2 top-1/2 -translate-y-1/2 z-20 hidden lg:flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-[#080808] backdrop-blur-sm text-white/50 hover:text-white hover:border-white/20 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] cursor-pointer ${canScrollLeft ? "pointer-events-auto" : "pointer-events-none opacity-0"}`}
       >
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M15 18l-6-6 6-6" />
@@ -75,7 +75,7 @@ function ScrollRow({ items }: { items: typeof products }) {
       <button
         onClick={() => scroll("right")}
         aria-label="Scroll right"
-        className={`absolute right-2 top-1/2 -translate-y-1/2 z-20 hidden lg:flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-[#080808] backdrop-blur-sm text-white/50 hover:text-white hover:border-white/20 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${canScrollRight ? "pointer-events-auto" : "pointer-events-none opacity-0"}`}
+        className={`absolute right-2 top-1/2 -translate-y-1/2 z-20 hidden lg:flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-[#080808] backdrop-blur-sm text-white/50 hover:text-white hover:border-white/20 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] cursor-pointer ${canScrollRight ? "pointer-events-auto" : "pointer-events-none opacity-0"}`}
       >
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M9 18l6-6-6-6" />

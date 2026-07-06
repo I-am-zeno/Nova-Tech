@@ -59,8 +59,8 @@ function StarRating({ count }: { count: number }) {
           width="12"
           height="12"
           viewBox="0 0 24 24"
-          fill={i < count ? "#0066ff" : "none"}
-          stroke={i < count ? "#0066ff" : "rgba(255,255,255,0.1)"}
+          fill={i < count ? "#f59e0b" : "none"}
+          stroke={i < count ? "#f59e0b" : "rgba(255,255,255,0.1)"}
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"

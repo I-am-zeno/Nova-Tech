@@ -28,77 +28,10 @@ export default function Hero() {
         />
       </div>
 
-      {/* Content — flex column on mobile, grid on desktop */}
-      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-5 sm:px-6 lg:px-12 pt-16 pb-10 sm:py-24 lg:py-32 flex-1 flex flex-col lg:grid lg:grid-cols-2 lg:gap-20 items-center">
-        {/* ===== Text Block ===== */}
-        <div className="flex flex-col gap-5 sm:gap-6 lg:gap-8 w-full max-w-xl lg:max-w-none">
-          {/* Eyebrow */}
-          <div
-            className="animate-[fade-up_0.8s_cubic-bezier(0.32,0.72,0,1)_both]"
-            style={{ animationDelay: "0.1s" }}
-          >
-            <span className="inline-block rounded-full px-3.5 py-1.5 text-[10px] sm:text-[11px] font-medium tracking-[0.25em] uppercase text-white/50 border border-white/10 bg-white/[0.02]">
-              Nawabshah&apos;s Trusted Tech Store
-            </span>
-          </div>
-
-          {/* Headline */}
-          <h1
-            className="animate-[fade-up_0.8s_cubic-bezier(0.32,0.72,0,1)_both]"
-            style={{ animationDelay: "0.25s" }}
-          >
-            <span className="block text-[clamp(2.5rem,9vw,4.5rem)] font-light leading-[1.06] tracking-tight text-white">
-              Latest Smartphones &amp;
-            </span>
-            <span className="block text-[clamp(2.5rem,9vw,4.5rem)] font-bold leading-[1.06] tracking-tight bg-gradient-to-r from-white via-white to-white/70 bg-clip-text text-transparent">
-              Smartwatches in One Place
-            </span>
-          </h1>
-
-          {/* Subtitle */}
-          <p
-            className="text-sm sm:text-base lg:text-lg text-white/40 leading-relaxed max-w-md animate-[fade-up_0.8s_cubic-bezier(0.32,0.72,0,1)_both]"
-            style={{ animationDelay: "0.4s" }}
-          >
-            We offer a wide selection of Android and iOS devices — from the
-            latest flagships to reliable previous models. All genuine, all
-            available in-store.
-          </p>
-
-          {/* CTA */}
-          <div
-            className="animate-[fade-up_0.8s_cubic-bezier(0.32,0.72,0,1)_both]"
-            style={{ animationDelay: "0.55s" }}
-          >
-            <a
-              href="/products"
-              className="group relative inline-flex items-center justify-center gap-3 rounded-full bg-white px-6 sm:px-7 min-h-[52px] text-sm font-semibold text-[#050505] transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-white/90 active:scale-[0.97] cursor-pointer w-full sm:w-auto"
-            >
-              <span>Explore Products</span>
-              <span className="flex items-center justify-center w-7 h-7 rounded-full bg-[#050505] text-white transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:scale-105 shrink-0">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-[1px] group-hover:-translate-y-[1px]"
-                >
-                  <path
-                    d="M1 13L13 1M13 1H5M13 1V9"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </a>
-          </div>
-        </div>
-
-        {/* ===== Device Composition ===== */}
-        <div className="relative w-full flex-1 lg:flex-initial lg:min-h-[560px] flex items-center justify-center mt-12 sm:mt-8 lg:mt-0">
+      {/* Content — flex column on mobile (device first), grid on desktop */}
+      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-5 sm:px-6 lg:px-12 pt-20 pb-10 sm:py-24 lg:py-32 flex-1 flex flex-col lg:grid lg:grid-cols-2 lg:gap-20 items-center">
+        {/* ===== Device Composition (mobile first, right on desktop) ===== */}
+        <div className="relative w-full flex-1 lg:flex-initial lg:min-h-[560px] flex items-center justify-center mt-4 sm:mt-8 lg:mt-0 mb-8 sm:mb-10 lg:mb-0 lg:order-2">
           {/* Glow ring */}
           <div className="absolute w-[260px] h-[260px] sm:w-[340px] sm:h-[340px] lg:w-[420px] lg:h-[420px] rounded-full bg-gradient-to-br from-accent/15 via-accent-glow/10 to-transparent blur-[60px] sm:blur-[80px] animate-[pulse-glow_6s_cubic-bezier(0.32,0.72,0,1)_infinite]" />
 
@@ -184,6 +117,73 @@ export default function Hero() {
           <div className="absolute w-1 h-1 rounded-full bg-white/5 bottom-[25%] right-[10%] animate-[float_5s_cubic-bezier(0.32,0.72,0,1)_infinite] hidden sm:block" />
           <div className="absolute w-[3px] h-[3px] rounded-full bg-accent/30 top-[40%] right-[5%] animate-[float_6s_cubic-bezier(0.32,0.72,0,1)_infinite] hidden sm:block" />
           <div className="absolute w-1 h-1 rounded-full bg-accent-glow/20 bottom-[35%] right-[35%] animate-[float_3.5s_cubic-bezier(0.32,0.72,0,1)_infinite] hidden sm:block" />
+        </div>
+
+        {/* ===== Text Block (below device on mobile, left on desktop) ===== */}
+        <div className="flex flex-col gap-5 sm:gap-6 lg:gap-8 w-full max-w-xl lg:max-w-none lg:order-1">
+          {/* Eyebrow */}
+          <div
+            className="animate-[fade-up_0.8s_cubic-bezier(0.32,0.72,0,1)_both]"
+            style={{ animationDelay: "0.1s" }}
+          >
+            <span className="inline-block rounded-full px-3.5 py-1.5 text-[10px] sm:text-[11px] font-medium tracking-[0.25em] uppercase text-white/50 border border-white/10 bg-white/[0.02]">
+              Nawabshah&apos;s Trusted Tech Store
+            </span>
+          </div>
+
+          {/* Headline */}
+          <h1
+            className="animate-[fade-up_0.8s_cubic-bezier(0.32,0.72,0,1)_both]"
+            style={{ animationDelay: "0.25s" }}
+          >
+            <span className="block text-[clamp(2.5rem,9vw,4.5rem)] font-light leading-[1.06] tracking-tight text-white">
+              Latest Smartphones &amp;
+            </span>
+            <span className="block text-[clamp(2.5rem,9vw,4.5rem)] font-bold leading-[1.06] tracking-tight bg-gradient-to-r from-white via-white to-white/70 bg-clip-text text-transparent">
+              Smartwatches in One Place
+            </span>
+          </h1>
+
+          {/* Subtitle */}
+          <p
+            className="text-sm sm:text-base lg:text-lg text-white/40 leading-relaxed max-w-md animate-[fade-up_0.8s_cubic-bezier(0.32,0.72,0,1)_both]"
+            style={{ animationDelay: "0.4s" }}
+          >
+            We offer a wide selection of Android and iOS devices — from the
+            latest flagships to reliable previous models. All genuine, all
+            available in-store.
+          </p>
+
+          {/* CTA */}
+          <div
+            className="animate-[fade-up_0.8s_cubic-bezier(0.32,0.72,0,1)_both]"
+            style={{ animationDelay: "0.55s" }}
+          >
+            <a
+              href="/products"
+              className="group relative inline-flex items-center justify-center gap-3 rounded-full bg-white px-6 sm:px-7 min-h-[52px] text-sm font-semibold text-[#050505] transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-white/90 active:scale-[0.97] cursor-pointer w-full sm:w-auto"
+            >
+              <span>Explore Products</span>
+              <span className="flex items-center justify-center w-7 h-7 rounded-full bg-[#050505] text-white transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:scale-105 shrink-0">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-[1px] group-hover:-translate-y-[1px]"
+                >
+                  <path
+                    d="M1 13L13 1M13 1H5M13 1V9"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
 

@@ -1,11 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Rubik, Nunito_Sans } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import "./globals.css";
 
-const plusJakarta = Plus_Jakarta_Sans({
+const rubik = Rubik({
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-rubik",
+});
+
+const nunitoSans = Nunito_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-nunito",
 });
 
 export const metadata: Metadata = {
@@ -17,7 +24,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#050505",
+  themeColor: "#0f172a",
 };
 
 export default function RootLayout({
@@ -26,8 +33,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={plusJakarta.className}>
-      <body className="antialiased bg-[#050505] text-white">
+    <html lang="en" className={`${rubik.variable} ${nunitoSans.variable}`}>
+      <body className="antialiased bg-[#050505] text-white font-heading">
         <Navbar />
         {children}
       </body>

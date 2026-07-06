@@ -233,7 +233,7 @@ export default function Contact() {
                       type="text"
                       required
                       placeholder="John Doe"
-                      className="w-full bg-white/[0.03] border border-white/[0.06] rounded-lg px-4 min-h-[48px] text-sm text-white/80 placeholder-white/20 outline-none transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] focus:border-accent/40 focus:bg-white/[0.05] focus:shadow-[0_0_0_1px_rgba(0,102,255,0.15)]"
+                      className="w-full bg-white/[0.03] border border-white/[0.06] rounded-lg px-4 min-h-[48px] text-sm text-white/80 placeholder-white/20 outline-none transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] focus:border-accent/40 focus:bg-white/[0.05] focus:shadow-[0_0_0_1px_rgba(245,158,11,0.2)]"
                     />
                   </div>
 
@@ -246,7 +246,7 @@ export default function Contact() {
                       type="tel"
                       required
                       placeholder="+92 3XX XXXXXXX"
-                      className="w-full bg-white/[0.03] border border-white/[0.06] rounded-lg px-4 min-h-[48px] text-sm text-white/80 placeholder-white/20 outline-none transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] focus:border-accent/40 focus:bg-white/[0.05] focus:shadow-[0_0_0_1px_rgba(0,102,255,0.15)]"
+                      className="w-full bg-white/[0.03] border border-white/[0.06] rounded-lg px-4 min-h-[48px] text-sm text-white/80 placeholder-white/20 outline-none transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] focus:border-accent/40 focus:bg-white/[0.05] focus:shadow-[0_0_0_1px_rgba(245,158,11,0.2)]"
                     />
                   </div>
 
@@ -259,7 +259,7 @@ export default function Contact() {
                       required
                       rows={4}
                       placeholder="I'm interested in..."
-                      className="w-full bg-white/[0.03] border border-white/[0.06] rounded-lg px-4 py-3 text-sm text-white/80 placeholder-white/20 outline-none resize-none transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] focus:border-accent/40 focus:bg-white/[0.05] focus:shadow-[0_0_0_1px_rgba(0,102,255,0.15)]"
+                      className="w-full bg-white/[0.03] border border-white/[0.06] rounded-lg px-4 py-3 text-sm text-white/80 placeholder-white/20 outline-none resize-none transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] focus:border-accent/40 focus:bg-white/[0.05] focus:shadow-[0_0_0_1px_rgba(245,158,11,0.2)]"
                     />
                   </div>
 

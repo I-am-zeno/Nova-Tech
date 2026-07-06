@@ -1,9 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-accent: #0066ff;
-  --color-accent-glow: #00d4ff;
-  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --color-accent: #f59e0b;
+  --color-accent-glow: #8b5cf6;
+  --color-on-accent: #0f172a;
+  --color-secondary: #fbbf24;
+  --color-deep-bg: #0f172a;
+  --color-muted-bg: #272f42;
+  --color-subtle-border: #334155;
+  --font-sans: var(--font-nunito), "Nunito Sans", sans-serif;
+  --font-heading: var(--font-rubik), "Rubik", sans-serif;
 }
 
 @keyframes float {
