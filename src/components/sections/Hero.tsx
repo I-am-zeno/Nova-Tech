@@ -38,7 +38,7 @@ export default function Hero() {
             style={{ animationDelay: "0.1s" }}
           >
             <span className="inline-block rounded-full px-3.5 py-1.5 text-[10px] sm:text-[11px] font-medium tracking-[0.25em] uppercase text-white/50 border border-white/10 bg-white/[0.02]">
-              New Collection
+              Nawabshah&apos;s Trusted Tech Store
             </span>
           </div>
 
@@ -48,10 +48,10 @@ export default function Hero() {
             style={{ animationDelay: "0.25s" }}
           >
             <span className="block text-[clamp(2.5rem,9vw,4.5rem)] font-light leading-[1.06] tracking-tight text-white">
-              Technology
+              Latest Smartphones &amp;
             </span>
             <span className="block text-[clamp(2.5rem,9vw,4.5rem)] font-bold leading-[1.06] tracking-tight bg-gradient-to-r from-white via-white to-white/70 bg-clip-text text-transparent">
-              That Elevates
+              Smartwatches in One Place
             </span>
           </h1>
 
@@ -60,8 +60,9 @@ export default function Hero() {
             className="text-sm sm:text-base lg:text-lg text-white/40 leading-relaxed max-w-md animate-[fade-up_0.8s_cubic-bezier(0.32,0.72,0,1)_both]"
             style={{ animationDelay: "0.4s" }}
           >
-            Discover precision-engineered smartphones and smartwatches curated
-            for those who demand the extraordinary.
+            We offer a wide selection of Android and iOS devices — from the
+            latest flagships to reliable previous models. All genuine, all
+            available in-store.
           </p>
 
           {/* CTA */}
@@ -69,7 +70,10 @@ export default function Hero() {
             className="animate-[fade-up_0.8s_cubic-bezier(0.32,0.72,0,1)_both]"
             style={{ animationDelay: "0.55s" }}
           >
-            <button className="group relative inline-flex items-center justify-center gap-3 rounded-full bg-white px-6 sm:px-7 min-h-[52px] text-sm font-semibold text-[#050505] transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-white/90 active:scale-[0.97] cursor-pointer w-full sm:w-auto">
+            <a
+              href="/products"
+              className="group relative inline-flex items-center justify-center gap-3 rounded-full bg-white px-6 sm:px-7 min-h-[52px] text-sm font-semibold text-[#050505] transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-white/90 active:scale-[0.97] cursor-pointer w-full sm:w-auto"
+            >
               <span>Explore Products</span>
               <span className="flex items-center justify-center w-7 h-7 rounded-full bg-[#050505] text-white transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:scale-105 shrink-0">
                 <svg
@@ -89,7 +93,7 @@ export default function Hero() {
                   />
                 </svg>
               </span>
-            </button>
+            </a>
           </div>
         </div>
 

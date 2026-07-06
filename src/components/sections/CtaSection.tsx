@@ -9,7 +9,7 @@ export default function CtaSection() {
       <div className="relative z-10 mx-auto max-w-[800px] px-5 sm:px-6 lg:px-12 py-20 sm:py-24 lg:py-40">
         <div className="flex flex-col items-center text-center">
           <span className="inline-block rounded-full px-3.5 py-1 text-[10px] font-medium tracking-[0.25em] uppercase text-white/30 border border-white/10 mb-5 sm:mb-6">
-            Ready to Experience
+            Visit Our Store
           </span>
 
           <h2 className="text-[clamp(1.75rem,6vw,4rem)] font-bold text-white tracking-tight leading-[1.08] mb-3 sm:mb-4">
@@ -27,7 +27,7 @@ export default function CtaSection() {
 
           <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
             <a
-              href="tel:+922449371234"
+              href="tel:+923130128660"
               className="group inline-flex items-center justify-center gap-3 rounded-full bg-white px-7 min-h-[48px] text-sm font-semibold text-[#050505] transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-white/90 active:scale-[0.97] w-full sm:w-auto"
             >
               <svg
@@ -46,7 +46,7 @@ export default function CtaSection() {
             </a>
 
             <a
-              href="https://wa.me/922449371234"
+              href="https://wa.me/923130128660"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-3 rounded-full border border-white/[0.12] bg-white/[0.04] px-7 min-h-[48px] text-sm font-medium text-white/70 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-white/[0.08] hover:border-white/20 hover:text-white/90 active:scale-[0.97] w-full sm:w-auto"

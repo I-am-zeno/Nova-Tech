@@ -16,7 +16,7 @@ export const products: Product[] = [
   // ── Android Phones ───────────────────────────────
   {
     id: "novaphone-pro",
-    name: "NovaPhone Pro",
+    name: "Galaxy S25 Ultra",
     tagline: "The pinnacle of performance",
     specs: "256GB • OLED Display • 5G",
     price: "$1,299",
@@ -29,7 +29,7 @@ export const products: Product[] = [
   },
   {
     id: "novaphone-fold",
-    name: "NovaPhone Fold",
+    name: "Galaxy Z Fold 7",
     tagline: "The future unfolds",
     specs: "512GB • Foldable OLED • 5G",
     price: "$1,899",
@@ -42,7 +42,7 @@ export const products: Product[] = [
   },
   {
     id: "novaphone-x",
-    name: "NovaPhone X",
+    name: "Pixel 10 Pro",
     tagline: "Designed to stand out",
     specs: "512GB • LTPO Display • 5G",
     price: "$1,499",
@@ -55,7 +55,7 @@ export const products: Product[] = [
   },
   {
     id: "novaphone-air",
-    name: "NovaPhone Air",
+    name: "OnePlus 13",
     tagline: "Lightness meets power",
     specs: "128GB • AMOLED • 5G",
     price: "$999",
@@ -70,7 +70,7 @@ export const products: Product[] = [
   // ── iPhones ──────────────────────────────────────
   {
     id: "iphone-pro-max",
-    name: "iPhone Pro Max",
+    name: "iPhone 17 Pro Max",
     tagline: "Maximum capability",
     specs: "1TB • LTPO OLED • 5G",
     price: "$1,699",
@@ -83,7 +83,7 @@ export const products: Product[] = [
   },
   {
     id: "iphone-pro",
-    name: "iPhone Pro",
+    name: "iPhone 17 Pro",
     tagline: "Built for creativity",
     specs: "256GB • OLED Display • 5G",
     price: "$1,299",
@@ -96,7 +96,7 @@ export const products: Product[] = [
   },
   {
     id: "iphone-air",
-    name: "iPhone Air",
+    name: "iPhone 17 Air",
     tagline: "Brilliantly light",
     specs: "128GB • OLED • 5G",
     price: "$999",
@@ -109,7 +109,7 @@ export const products: Product[] = [
   },
   {
     id: "iphone-se",
-    name: "iPhone SE",
+    name: "iPhone SE 4",
     tagline: "Essential power",
     specs: "64GB • Retina • 5G",
     price: "$599",
@@ -124,7 +124,7 @@ export const products: Product[] = [
   // ── Pro Series Watches ───────────────────────────
   {
     id: "novawatch-ultra",
-    name: "NovaWatch Ultra",
+    name: "Galaxy Watch Ultra",
     tagline: "Built for the extremes",
     specs: "49mm • Titanium • GPS + Cellular",
     price: "$799",
@@ -137,7 +137,7 @@ export const products: Product[] = [
   },
   {
     id: "novawatch-pro",
-    name: "NovaWatch Pro",
+    name: "Pixel Watch 3",
     tagline: "Professional grade",
     specs: "50mm • Titanium • GPS + Cellular",
     price: "$899",
@@ -150,7 +150,7 @@ export const products: Product[] = [
   },
   {
     id: "novawatch-sport",
-    name: "NovaWatch Sport",
+    name: "Galaxy Watch 7",
     tagline: "Engineered for athletes",
     specs: "44mm • Aluminum • GPS",
     price: "$349",
@@ -163,7 +163,7 @@ export const products: Product[] = [
   },
   {
     id: "novawatch-titan",
-    name: "NovaWatch Titan",
+    name: "Garmin Fenix 8",
     tagline: "Rugged endurance",
     specs: "47mm • Titanium • GPS + Cellular",
     price: "$699",
@@ -178,7 +178,7 @@ export const products: Product[] = [
   // ── Essential Series Watches ─────────────────────
   {
     id: "novawatch-heritage",
-    name: "NovaWatch Heritage",
+    name: "Galaxy Watch Classic",
     tagline: "Timeless sophistication",
     specs: "40mm • Gold • GPS",
     price: "$1,099",
@@ -191,7 +191,7 @@ export const products: Product[] = [
   },
   {
     id: "novawatch-classic",
-    name: "NovaWatch Classic",
+    name: "Fossil Gen 7",
     tagline: "Timeless elegance redefined",
     specs: "42mm • Stainless Steel • GPS",
     price: "$599",
@@ -204,7 +204,7 @@ export const products: Product[] = [
   },
   {
     id: "novawatch-elegance",
-    name: "NovaWatch Elegance",
+    name: "Huawei Watch GT 5",
     tagline: "Style meets substance",
     specs: "38mm • Rose Gold • GPS",
     price: "$749",
@@ -217,7 +217,7 @@ export const products: Product[] = [
   },
   {
     id: "novawatch-air",
-    name: "NovaWatch Air",
+    name: "Galaxy Watch FE",
     tagline: "Your everyday companion",
     specs: "45mm • Aluminum • GPS",
     price: "$399",

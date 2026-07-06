@@ -5,8 +5,8 @@ import { useState } from "react";
 const contactMethods = [
   {
     label: "Phone",
-    value: "+92 244 937 1234",
-    href: "tel:+922449371234",
+    value: "+92 313 0128660",
+    href: "tel:+923130128660",
     icon: (
       <svg
         width="16"
@@ -138,7 +138,7 @@ export default function Contact() {
               </div>
 
               <a
-                href="https://wa.me/922449371234"
+                href="https://wa.me/923130128660"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 rounded-full border border-white/[0.1] bg-white/[0.03] px-6 min-h-[48px] text-sm font-medium text-white/60 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-white/[0.08] hover:border-white/20 hover:text-white/90 active:scale-[0.97] mb-8 sm:mb-10"

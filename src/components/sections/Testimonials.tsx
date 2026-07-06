@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Ahmed Raza",
     location: "Nawabshah, Sindh",
-    text: "Bought the NovaPhone Pro from them last month. The staff was incredibly helpful and the price was fair. Will definitely come back.",
+    text: "Bought the Galaxy S25 Ultra from them last month. The staff was incredibly helpful and the price was fair. Will definitely come back.",
     rating: 5,
     initials: "AR",
   },
@@ -20,7 +20,7 @@ const testimonials = [
   {
     name: "Bilal Ahmed",
     location: "Nawabshah, Sindh",
-    text: "Got my NovaWatch from here. The delivery was on time, product was factory-sealed, and they even helped me set it up. Highly recommended.",
+    text: "Got my Galaxy Watch from here. The delivery was on time, product was factory-sealed, and they even helped me set it up. Highly recommended.",
     rating: 5,
     initials: "BA",
   },

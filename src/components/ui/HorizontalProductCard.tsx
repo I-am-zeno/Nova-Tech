@@ -42,7 +42,7 @@ export default function HorizontalProductCard({
 }) {
   return (
     <Link
-      href={`/products/${product.id}`}
+      href={`/product/${product.id}`}
       className="group block p-[1px] rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02] transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:from-white/[0.12] hover:to-white/[0.06] h-full"
     >
       <div className="relative rounded-[calc(1.5rem-1px)] bg-[#0a0a0a] p-4 sm:p-5 flex flex-col items-center text-center overflow-hidden h-full">

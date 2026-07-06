@@ -16,19 +16,19 @@ const subcategoryMeta: Record<
 > = {
   Android: {
     title: "Android Phones",
-    description: "Discover our range of Android smartphones.",
+    description: "Browse our collection of Android smartphones from top brands.",
   },
   iPhone: {
     title: "iPhones",
-    description: "Explore the latest iPhone models.",
+    description: "Latest and previous iPhone models — available in-store.",
   },
   "Pro Series": {
     title: "Pro Series Watches",
-    description: "Built for the extremes. Rugged, precision-engineered.",
+    description: "Premium smartwatches built for performance and durability.",
   },
   "Essential Series": {
     title: "Essential Series Watches",
-    description: "Timeless elegance for everyday life.",
+    description: "Everyday smartwatches with style and functionality.",
   },
 };
 

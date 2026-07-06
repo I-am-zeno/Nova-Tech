@@ -21,8 +21,8 @@ const info = [
   },
   {
     label: "Phone",
-    value: "+92 244 937 1234",
-    href: "tel:+922449371234",
+    value: "+92 313 0128660",
+    href: "tel:+923130128660",
     icon: (
       <svg
         width="16"
@@ -173,11 +173,11 @@ export default function VisitOurStore() {
               Visit Our Store
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white tracking-tight mb-2 sm:mb-3">
-              We&apos;re Here to Help
+              Visit Our Store
             </h2>
             <p className="text-sm sm:text-base text-white/30 max-w-md mb-8 sm:mb-10 leading-relaxed">
-              Step into our Nawabshah flagship. Experience every device firsthand
-              and talk to our product experts.
+              Browse our full collection in person. Compare models side by side
+              and get advice from our team.
             </p>
 
             <div className="space-y-5 sm:space-y-6">

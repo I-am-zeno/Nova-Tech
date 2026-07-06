@@ -9,9 +9,9 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "NovaTech — Premium Technology",
+  title: "NovaTech — Smartphones & Smartwatches in Nawabshah",
   description:
-    "Discover our curated collection of premium smartphones and smartwatches.",
+    "We offer a wide range of Android and iOS smartphones and smartwatches from top brands. Visit our Nawabshah store for genuine devices.",
 };
 
 export const viewport: Viewport = {

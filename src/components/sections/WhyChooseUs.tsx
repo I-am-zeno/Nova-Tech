@@ -2,7 +2,7 @@ const features = [
   {
     title: "Genuine Products",
     description:
-      "Every device is factory-sealed and sourced directly from the manufacturer.",
+      "Every device is factory-sealed and sourced from authorized distributors.",
     icon: (
       <svg
         width="18"
@@ -21,7 +21,7 @@ const features = [
   {
     title: "Latest Devices",
     description:
-      "We stock the newest releases — often before they hit retail shelves.",
+      "We stock the newest releases alongside reliable previous-gen models.",
     icon: (
       <svg
         width="18"
@@ -40,7 +40,7 @@ const features = [
   {
     title: "Expert Guidance",
     description:
-      "Knowledgable advisors help you find the perfect device for your lifestyle.",
+      "Our team helps you compare options and find the right device for your needs.",
     icon: (
       <svg
         width="18"
@@ -61,7 +61,7 @@ const features = [
   {
     title: "After-Sales Support",
     description:
-      "Dedicated support team ready to assist you long after your purchase.",
+      "We stand by every device we sell — support doesn&apos;t end at the counter.",
     icon: (
       <svg
         width="18"
@@ -137,7 +137,7 @@ export default function WhyChooseUs() {
             Built on Trust
           </h2>
           <p className="mt-2 sm:mt-3 text-sm sm:text-base text-white/30 max-w-lg">
-            We don&apos;t just sell technology — we stand behind it.
+            We sell quality devices — and the service to match.
           </p>
         </div>
 

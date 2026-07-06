@@ -162,10 +162,10 @@ export default function Lineup() {
               The Lineup
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white tracking-tight">
-              Explore Our Devices
+              What We Carry
             </h2>
             <p className="mt-2 sm:mt-3 text-sm sm:text-base text-white/30 max-w-lg">
-              Four categories. Endless possibilities.
+              Android phones, iPhones, and smartwatches — top brands, all in one place.
             </p>
           </div>
         </div>
