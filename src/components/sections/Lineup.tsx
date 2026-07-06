@@ -1,4 +1,5 @@
 import HorizontalProductCard from "@/components/ui/HorizontalProductCard";
+import AnimatedCard from "@/components/ui/AnimatedCard";
 import { products } from "@/lib/data/products";
 
 const androidPhones = products.filter(
@@ -39,10 +40,12 @@ function ScrollRow({ items }: { items: typeof products }) {
         <div className="shrink-0 w-4" />
       </div>
 
-      {/* Mobile / Tablet: responsive grid */}
-      <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 px-5 sm:px-6">
-        {items.map((product) => (
-          <HorizontalProductCard key={product.id} product={product} />
+      {/* Mobile / Tablet: 2-column grid */}
+      <div className="lg:hidden grid grid-cols-2 gap-3 sm:gap-4 px-5 sm:px-6">
+        {items.map((product, index) => (
+          <AnimatedCard key={product.id} delay={0.05 + index * 0.06}>
+            <HorizontalProductCard product={product} />
+          </AnimatedCard>
         ))}
       </div>
 
