@@ -2,6 +2,8 @@ import HorizontalProductCard from "@/components/ui/HorizontalProductCard";
 import AnimatedCard from "@/components/ui/AnimatedCard";
 import { products } from "@/lib/data/products";
 
+const MOBILE_LIMIT = 2;
+
 const androidPhones = products.filter(
   (p) => p.category === "Phone" && p.subcategory === "Android"
 );
@@ -40,9 +42,9 @@ function ScrollRow({ items }: { items: typeof products }) {
         <div className="shrink-0 w-4" />
       </div>
 
-      {/* Mobile / Tablet: 2-column grid */}
+      {/* Mobile / Tablet: 2-column grid (limit to MOBILE_LIMIT) */}
       <div className="lg:hidden grid grid-cols-2 gap-3 sm:gap-4 px-5 sm:px-6">
-        {items.map((product, index) => (
+        {items.slice(0, MOBILE_LIMIT).map((product, index) => (
           <AnimatedCard key={product.id} delay={0.05 + index * 0.06}>
             <HorizontalProductCard product={product} />
           </AnimatedCard>
@@ -55,6 +57,13 @@ function ScrollRow({ items }: { items: typeof products }) {
   );
 }
 
+const titleToSlug: Record<string, string> = {
+  "Android Phones": "android",
+  iPhones: "iphone",
+  "Pro Series": "pro-series",
+  "Essential Series": "essential-series",
+};
+
 function RowSection({
   icon,
   title,
@@ -66,6 +75,8 @@ function RowSection({
   count: number;
   items: typeof products;
 }) {
+  const slug = titleToSlug[title] || "";
+
   return (
     <div>
       <div className="mx-auto max-w-[1440px] px-5 sm:px-6 lg:px-12 mb-5 sm:mb-6 lg:mb-10">
@@ -77,8 +88,11 @@ function RowSection({
           <span className="text-[10px] sm:text-[11px] font-medium text-white/20 tracking-wide">
             {count} Products
           </span>
-          <div className="ml-auto hidden sm:flex items-center gap-2 text-white/20 text-[11px] font-medium tracking-wider uppercase">
-            <span className="hidden lg:inline">Scroll</span>
+          <a
+            href={`/products/${slug}`}
+            className="ml-auto hidden sm:flex items-center gap-2 text-white/20 text-[11px] font-medium tracking-wider uppercase hover:text-white/40 transition-colors duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]"
+          >
+            <span className="hidden lg:inline">View All</span>
             <span className="lg:hidden">View all</span>
             <svg
               width="14"
@@ -92,10 +106,35 @@ function RowSection({
             >
               <path d="M5 12h14M13 18l6-6-6-6" />
             </svg>
-          </div>
+          </a>
         </div>
       </div>
       <ScrollRow items={items} />
+
+      {/* View all link - visible below desktop */}
+      <div className="lg:hidden mx-auto max-w-[1440px] px-5 sm:px-6 mt-4 sm:mt-5">
+        <a
+          href={`/products/${slug}`}
+          className="group inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-white/30 hover:text-white/60 transition-colors duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]"
+        >
+          <span>View All {title}</span>
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            className="transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-0.5"
+          >
+            <path
+              d="M1 11L11 1M11 1H4.5M11 1V7.5"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
     </div>
   );
 }

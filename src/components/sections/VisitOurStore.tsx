@@ -173,7 +173,7 @@ export default function VisitOurStore() {
               Visit Our Store
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white tracking-tight mb-2 sm:mb-3">
-              We&aposre Here to Help
+              We&apos;re Here to Help
             </h2>
             <p className="text-sm sm:text-base text-white/30 max-w-md mb-8 sm:mb-10 leading-relaxed">
               Step into our Nawabshah flagship. Experience every device firsthand
