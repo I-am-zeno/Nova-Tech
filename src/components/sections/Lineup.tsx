@@ -1,17 +1,14 @@
 "use client";
 
 import HorizontalProductCard from "@/components/ui/HorizontalProductCard";
-import AnimatedCard from "@/components/ui/AnimatedCard";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { products } from "@/lib/data/products";
 import { useRef, useState, useEffect } from "react";
 
-const MOBILE_LIMIT = 2;
-
 const smartphones = products.filter((p) => p.category === "Phone");
 const smartwatches = products.filter((p) => p.category === "Watch");
 
-function ScrollRow({ items }: { items: typeof products }) {
+function ScrollRow({ items, viewAllHref, icon }: { items: typeof products; viewAllHref: string; icon: React.ReactNode }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -82,12 +79,21 @@ function ScrollRow({ items }: { items: typeof products }) {
         </svg>
       </button>
 
-      <div className="lg:hidden grid grid-cols-2 gap-3 sm:gap-4 px-5 sm:px-6">
-        {items.slice(0, MOBILE_LIMIT).map((product, index) => (
-          <AnimatedCard key={product.id} delay={0.05 + index * 0.06}>
-            <HorizontalProductCard product={product} />
-          </AnimatedCard>
-        ))}
+      <div className="lg:hidden mx-auto max-w-[200px]">
+        <a
+          href={viewAllHref}
+          className="group block p-[1px] rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02] transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:from-white/[0.12] hover:to-white/[0.06] active:scale-[0.98]"
+        >
+          <div className="relative rounded-[calc(1.5rem-1px)] bg-[#080808] p-6 flex flex-col items-center justify-center gap-3 overflow-hidden min-h-[140px]">
+            <div className="absolute -inset-40 bg-gradient-to-br from-accent/0 via-accent/0 to-accent/0 opacity-0 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:opacity-100 group-hover:from-accent/[0.04] group-hover:via-accent/[0.01] group-hover:to-transparent pointer-events-none" />
+            <div className="relative z-10 text-white/40 group-hover:text-white/60 transition-colors duration-500">
+              {icon}
+            </div>
+            <span className="relative z-10 text-sm font-medium text-white/40 group-hover:text-white/70 transition-colors duration-500">
+              Browse All
+            </span>
+          </div>
+        </a>
       </div>
 
       <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#080808] to-transparent z-10 pointer-events-none hidden lg:block" />
@@ -142,31 +148,8 @@ function RowSection({
         </div>
         </div>
       </ScrollReveal>
-      <ScrollRow items={items} />
+      <ScrollRow items={items} viewAllHref={viewAllHref} icon={icon} />
 
-      <div className="lg:hidden mx-auto max-w-[1440px] px-5 sm:px-6 mt-4 sm:mt-5">
-        <a
-          href={viewAllHref}
-          className="group inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-white/30 hover:text-white/60 transition-colors duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]"
-        >
-          <span>View All {title}</span>
-          <svg
-            width="12"
-            height="12"
-            viewBox="0 0 12 12"
-            fill="none"
-            className="transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-0.5"
-          >
-            <path
-              d="M1 11L11 1M11 1H4.5M11 1V7.5"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </a>
-      </div>
     </div>
   );
 }
@@ -201,7 +184,7 @@ export default function Lineup() {
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
               <p className="mt-2 sm:mt-3 text-sm sm:text-base text-white/30 max-w-lg">
-                <a href="/products/android" className="text-green-500 hover:text-green-400 transition-colors duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]">Android phones</a><span className="text-white/30">, </span><a href="/products/iphone" className="text-zinc-400 hover:text-zinc-300 transition-colors duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]">iPhones</a><span className="text-white/30">, and </span><a href="/products" className="text-orange-500 hover:text-orange-400 transition-colors duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]">smartwatches</a><span className="text-white/30"> — top brands, all in one place.</span>
+                <span className="text-white/30">Android phones, iPhones, and smartwatches — top brands, all in one place.</span>
               </p>
             </ScrollReveal>
           </div>
