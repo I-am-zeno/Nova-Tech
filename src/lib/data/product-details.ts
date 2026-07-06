@@ -359,7 +359,7 @@ export const productDetails: Record<string, ProductDetail> = {
       { label: "Weight", value: "32g" },
     ],
   },
-  "novawatch-air": {
+   "novawatch-air": {
     description:
       "Your everyday companion. The Galaxy Watch FE is lightweight, comfortable, and packed with essential health and fitness features. It's the perfect smartwatch for anyone who wants to stay connected and active.",
     features: [
@@ -379,6 +379,173 @@ export const productDetails: Record<string, ProductDetail> = {
       { label: "Sensors", value: "HR, SpO2, accelerometer, gyroscope" },
       { label: "Connectivity", value: "GPS, Wi-Fi, Bluetooth 5.3, NFC" },
       { label: "Weight", value: "30g" },
+    ],
+  },
+
+  // ── New Android ──
+  "nothing-phone-3": {
+    description:
+      "The Nothing Phone (3) stands out with its iconic transparent design and Glyph Interface. It offers a clean, bloatware-free experience powered by a flagship-grade processor, a stunning OLED display, and an innovative camera system.",
+    features: [
+      "6.7-inch LTPO OLED display with 120Hz",
+      "Transparent back with programmable Glyph Interface",
+      "50MP dual camera with advanced night mode",
+      "Flagship processor with 12GB RAM",
+      "Glyph LED notifications and gestures",
+      "Clean Android experience with 3 years of updates",
+    ],
+    specifications: [
+      { label: "Display", value: "6.7\" LTPO OLED, 120Hz, HDR10+" },
+      { label: "Processor", value: "Octa-core 3.0GHz" },
+      { label: "RAM", value: "12GB LPDDR5" },
+      { label: "Storage", value: "256GB / 512GB" },
+      { label: "Battery", value: "5000mAh, 45W wired + 15W wireless" },
+      { label: "Camera", value: "50MP + 50MP dual rear" },
+      { label: "Front Camera", value: "32MP" },
+      { label: "OS", value: "Android 15" },
+      { label: "Connectivity", value: "5G, Wi-Fi 6E, Bluetooth 5.3" },
+      { label: "Weight", value: "205g" },
+    ],
+  },
+  "xiaomi-15-pro": {
+    description:
+      "The Xiaomi 15 Pro pushes the boundaries of smartphone photography with a professional Leica-tuned camera system. Combined with a stunning AMOLED display and lightning-fast performance, it delivers a true flagship experience.",
+    features: [
+      "6.73-inch AMOLED display with 120Hz",
+      "Leica professional triple camera system",
+      "50MP + 50MP + 50MP rear cameras",
+      "Snapdragon 8 Gen 4 processor",
+      "5400mAh battery with 120W HyperCharge",
+      "IP68 water and dust resistance",
+    ],
+    specifications: [
+      { label: "Display", value: "6.73\" AMOLED, 120Hz, HDR10+" },
+      { label: "Processor", value: "Snapdragon 8 Gen 4" },
+      { label: "RAM", value: "12GB / 16GB LPDDR5X" },
+      { label: "Storage", value: "256GB / 512GB / 1TB" },
+      { label: "Battery", value: "5400mAh, 120W wired + 50W wireless" },
+      { label: "Camera", value: "50MP + 50MP + 50MP Leica triple" },
+      { label: "Front Camera", value: "32MP" },
+      { label: "OS", value: "Android 15 with HyperOS" },
+      { label: "Connectivity", value: "5G, Wi-Fi 7, Bluetooth 5.4" },
+      { label: "Weight", value: "213g" },
+    ],
+  },
+
+  // ── New iPhone ──
+  "iphone-17": {
+    description:
+      "The iPhone 17 delivers everything you need in a smartphone — powerful performance, a stunning OLED display, and an advanced camera system. Powered by the A19 chip, it offers smooth everyday performance at a more accessible price.",
+    features: [
+      "6.1-inch Super Retina XDR OLED display",
+      "A19 chip with 5-core GPU",
+      "48MP advanced dual-camera system",
+      "All-day battery life up to 22 hours",
+      "Aluminum design with Ceramic Shield",
+      "IP68 water resistance",
+    ],
+    specifications: [
+      { label: "Display", value: "6.1\" Super Retina XDR OLED, 60Hz" },
+      { label: "Chip", value: "A19, 6-core CPU + 5-core GPU" },
+      { label: "RAM", value: "8GB" },
+      { label: "Storage", value: "128GB / 256GB" },
+      { label: "Battery", value: "Up to 22h video playback" },
+      { label: "Camera", value: "48MP + 12MP dual rear" },
+      { label: "Front Camera", value: "12MP TrueDepth" },
+      { label: "OS", value: "iOS 19" },
+      { label: "Connectivity", value: "5G, Wi-Fi 6E, Bluetooth 5.3" },
+      { label: "Weight", value: "171g" },
+    ],
+  },
+
+  // ── New Pro Series ──
+  "galaxy-watch-ultra-2": {
+    description:
+      "The Galaxy Watch Ultra 2 takes durability and performance even further. With an enhanced titanium build, improved battery life, and advanced outdoor features, it's built for those who refuse to be confined.",
+    features: [
+      "49mm grade-5 titanium case",
+      "Enhanced dual-frequency GPS",
+      "Up to 80 hours battery in normal mode",
+      "100m water resistance with dive computer",
+      "86dB emergency siren",
+      "Precision multi-band GNSS",
+    ],
+    specifications: [
+      { label: "Case Size", value: "49mm grade-5 titanium" },
+      { label: "Display", value: "502×502 OLED, 3000 nits" },
+      { label: "Processor", value: "Dual-core S11 SiP" },
+      { label: "Battery", value: "Up to 80 hours (40h normal)" },
+      { label: "Water Resistance", value: "100m (dive computer)" },
+      { label: "Sensors", value: "HR, SpO2, depth, temperature, ECG" },
+      { label: "Connectivity", value: "GPS + Cellular, Wi-Fi, Bluetooth 5.3" },
+      { label: "Weight", value: "60g" },
+    ],
+  },
+  "suunto-vertical": {
+    description:
+      "The Suunto Vertical is an adventure-ready GPS watch with detailed route planning, storm alerts, and up to 60 days of battery in basic mode. Built for explorers who venture beyond the beaten path.",
+    features: [
+      "49mm titanium case with sapphire glass",
+      "Dual-band GPS with offline maps",
+      "Up to 60 days battery in basic mode",
+      "Barometric altimeter with storm alarm",
+      "100m water resistance",
+      "Route planning with turn-by-turn navigation",
+    ],
+    specifications: [
+      { label: "Case Size", value: "49mm titanium" },
+      { label: "Display", value: "280×280 MIP, 1000 nits" },
+      { label: "Processor", value: "Dual-core" },
+      { label: "Battery", value: "Up to 60 days basic (30 days normal)" },
+      { label: "Water Resistance", value: "100m" },
+      { label: "Sensors", value: "HR, SpO2, altimeter, compass, GPS" },
+      { label: "Connectivity", value: "GPS + GLONASS + Galileo, Bluetooth 5.0" },
+      { label: "Weight", value: "74g" },
+    ],
+  },
+
+  // ── New Essential Series ──
+  "withings-scanwatch": {
+    description:
+      "The Withings ScanWatch combines medical-grade health tracking with timeless analog design. It features ECG, SpO2 monitoring, and sleep apnea detection, all in a classic stainless steel watch you'll be proud to wear.",
+    features: [
+      "42mm stainless steel case",
+      "ECG and SpO2 monitoring",
+      "Sleep apnea detection",
+      "Analog design with digital health display",
+      "30-day battery life",
+      "5ATM water resistance",
+    ],
+    specifications: [
+      { label: "Case Size", value: "42mm stainless steel" },
+      { label: "Display", value: "OLED secondary display" },
+      { label: "Battery", value: "Up to 30 days" },
+      { label: "Water Resistance", value: "50m (5ATM)" },
+      { label: "Sensors", value: "ECG, SpO2, heart rate, accelerometer" },
+      { label: "Connectivity", value: "Bluetooth 5.0, Wi-Fi" },
+      { label: "Weight", value: "52g" },
+    ],
+  },
+  "amazfit-balance": {
+    description:
+      "The Amazfit Balance offers incredible value without compromising on features. With a bright AMOLED display, comprehensive health tracking, and up to 14 days of battery, it's the perfect everyday fitness companion.",
+    features: [
+      "46mm lightweight aluminum case",
+      "1.5-inch AMOLED display with always-on",
+      "BioTracker PPG biometric sensor",
+      "Dual-band GPS with GLONASS",
+      "Up to 14 days typical battery life",
+      "Stress monitoring with breathing exercises",
+    ],
+    specifications: [
+      { label: "Case Size", value: "46mm aluminum" },
+      { label: "Display", value: "1.5\" AMOLED, 480×480" },
+      { label: "Processor", value: "Dual-core" },
+      { label: "Battery", value: "Up to 14 days (7 days heavy use)" },
+      { label: "Water Resistance", value: "50m" },
+      { label: "Sensors", value: "HR, SpO2, accelerometer, gyroscope, barometer" },
+      { label: "Connectivity", value: "GPS + GLONASS, Bluetooth 5.2" },
+      { label: "Weight", value: "35g" },
     ],
   },
 };

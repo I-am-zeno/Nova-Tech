@@ -29,7 +29,7 @@ export default function Hero() {
       </div>
 
       {/* Content — flex column on mobile, grid on desktop */}
-      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-5 sm:px-6 lg:px-12 py-16 sm:py-24 lg:py-32 flex-1 flex flex-col lg:grid lg:grid-cols-2 lg:gap-20 items-center">
+      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-5 sm:px-6 lg:px-12 pt-16 pb-10 sm:py-24 lg:py-32 flex-1 flex flex-col lg:grid lg:grid-cols-2 lg:gap-20 items-center">
         {/* ===== Text Block ===== */}
         <div className="flex flex-col gap-5 sm:gap-6 lg:gap-8 w-full max-w-xl lg:max-w-none">
           {/* Eyebrow */}
@@ -98,7 +98,7 @@ export default function Hero() {
         </div>
 
         {/* ===== Device Composition ===== */}
-        <div className="relative w-full flex-1 lg:flex-initial lg:min-h-[560px] flex items-center justify-center mt-6 sm:mt-8 lg:mt-0">
+        <div className="relative w-full flex-1 lg:flex-initial lg:min-h-[560px] flex items-center justify-center mt-12 sm:mt-8 lg:mt-0">
           {/* Glow ring */}
           <div className="absolute w-[260px] h-[260px] sm:w-[340px] sm:h-[340px] lg:w-[420px] lg:h-[420px] rounded-full bg-gradient-to-br from-accent/15 via-accent-glow/10 to-transparent blur-[60px] sm:blur-[80px] animate-[pulse-glow_6s_cubic-bezier(0.32,0.72,0,1)_infinite]" />
 

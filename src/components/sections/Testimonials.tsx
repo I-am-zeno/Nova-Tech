@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const testimonials = [
   {
@@ -171,15 +172,21 @@ export default function Testimonials() {
       <div className="relative z-10 py-16 sm:py-20 lg:py-32">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-6 lg:px-12 mb-10 sm:mb-12 lg:mb-16">
           <div className="flex flex-col items-center text-center">
-            <span className="inline-block rounded-full px-3.5 py-1 text-[10px] font-medium tracking-[0.25em] uppercase text-white/40 border border-white/10 mb-3 sm:mb-4">
-              Testimonials
-            </span>
-            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white tracking-tight">
-              What Our Customers Say
-            </h2>
-            <p className="mt-2 sm:mt-3 text-sm sm:text-base text-white/30 max-w-lg">
-              Real feedback from real people across Sindh.
-            </p>
+            <ScrollReveal>
+              <span className="inline-block rounded-full px-3.5 py-1 text-[10px] font-medium tracking-[0.25em] uppercase text-white/40 border border-white/10 mb-3 sm:mb-4">
+                Testimonials
+              </span>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white tracking-tight">
+                What Our Customers Say
+              </h2>
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+              <p className="mt-2 sm:mt-3 text-sm sm:text-base text-white/30 max-w-lg">
+                Real feedback from real people across Sindh.
+              </p>
+            </ScrollReveal>
           </div>
         </div>
 
@@ -200,7 +207,9 @@ export default function Testimonials() {
           >
             <style>{`div::-webkit-scrollbar { display: none }`}</style>
             {allCards.map((t, i) => (
-              <TestimonialCard key={`${t.name}-${i}`} {...t} />
+              <ScrollReveal key={`${t.name}-${i}`} delay={0.3 + (i % testimonials.length) * 0.08}>
+                <TestimonialCard {...t} />
+              </ScrollReveal>
             ))}
           </div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const contactMethods = [
   {
@@ -104,18 +105,25 @@ export default function Contact() {
           {/* Left: Contact Info */}
           <div className="flex flex-col">
             <div>
-              <span className="inline-block rounded-full px-3.5 py-1 text-[10px] font-medium tracking-[0.25em] uppercase text-white/40 border border-white/10 mb-3 sm:mb-4">
-                Contact
-              </span>
-              <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white tracking-tight mb-2 sm:mb-3">
-                Get in Touch
-              </h2>
-              <p className="text-sm sm:text-base text-white/30 max-w-md leading-relaxed mb-8 sm:mb-10">
-                Have a question about a product, availability, or pricing? We&apos;re
-                just a message or a call away.
-              </p>
+              <ScrollReveal>
+                <span className="inline-block rounded-full px-3.5 py-1 text-[10px] font-medium tracking-[0.25em] uppercase text-white/40 border border-white/10 mb-3 sm:mb-4">
+                  Contact
+                </span>
+              </ScrollReveal>
+              <ScrollReveal delay={0.1}>
+                <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white tracking-tight mb-2 sm:mb-3">
+                  Get in Touch
+                </h2>
+              </ScrollReveal>
+              <ScrollReveal delay={0.2}>
+                <p className="text-sm sm:text-base text-white/30 max-w-md leading-relaxed mb-8 sm:mb-10">
+                  Have a question about a product, availability, or pricing? We&apos;re
+                  just a message or a call away.
+                </p>
+              </ScrollReveal>
 
-              <div className="space-y-5 mb-8 sm:mb-10">
+              <ScrollReveal delay={0.3}>
+                <div className="space-y-5 mb-8 sm:mb-10">
                 {contactMethods.map((method) => (
                   <a
                     key={method.label}
@@ -136,7 +144,9 @@ export default function Contact() {
                   </a>
                 ))}
               </div>
+              </ScrollReveal>
 
+              <ScrollReveal delay={0.4}>
               <a
                 href="https://wa.me/923130128660"
                 target="_blank"
@@ -162,7 +172,9 @@ export default function Contact() {
                   </svg>
                 </span>
               </a>
+              </ScrollReveal>
 
+              <ScrollReveal delay={0.5}>
               <div className="flex items-center gap-3">
                 <span className="text-[11px] font-medium tracking-wider uppercase text-white/20">
                   Follow us
@@ -179,10 +191,12 @@ export default function Contact() {
                   </a>
                 ))}
               </div>
+              </ScrollReveal>
             </div>
           </div>
 
           {/* Right: Form */}
+          <ScrollReveal delay={0.15}>
           <div className="p-[1px] rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02]">
             <div className="relative rounded-[calc(1.5rem-1px)] bg-[#0a0a0a] p-5 sm:p-8 lg:p-10 overflow-hidden">
               <div className="absolute -inset-40 bg-gradient-to-br from-accent/0 via-accent/0 to-accent/0 pointer-events-none" />
@@ -264,6 +278,7 @@ export default function Contact() {
               )}
             </div>
           </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>

@@ -79,6 +79,8 @@ const features = [
   },
 ];
 
+import ScrollReveal from "@/components/ui/ScrollReveal";
+
 function FeatureCard({
   title,
   description,
@@ -91,9 +93,8 @@ function FeatureCard({
   index: number;
 }) {
   return (
-    <div
-      className="group p-[1px] rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02] transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:from-white/[0.12] hover:to-white/[0.06] active:scale-[0.98]"
-      style={{ animationDelay: `${0.1 + index * 0.1}s` }}
+    <ScrollReveal delay={0.3 + index * 0.1}>
+      <div className="group p-[1px] rounded-2xl bg-gradient-to-b from-white/[0.06] to-white/[0.02] transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:from-white/[0.12] hover:to-white/[0.06] active:scale-[0.98]"
     >
       <div className="relative rounded-[calc(1.5rem-1px)] bg-[#080808] p-5 sm:p-8 h-full overflow-hidden">
         <div className="absolute -inset-40 bg-gradient-to-br from-accent/0 via-accent/0 to-accent/0 opacity-0 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:opacity-100 group-hover:from-accent/[0.04] group-hover:via-accent/[0.01] group-hover:to-transparent pointer-events-none" />
@@ -110,6 +111,7 @@ function FeatureCard({
         </p>
       </div>
     </div>
+    </ScrollReveal>
   );
 }
 
@@ -130,15 +132,21 @@ export default function WhyChooseUs() {
 
       <div className="relative z-10 mx-auto max-w-[1440px] px-5 sm:px-6 lg:px-12 py-16 sm:py-20 lg:py-32">
         <div className="flex flex-col items-center text-center mb-12 sm:mb-14 lg:mb-20">
-          <span className="inline-block rounded-full px-3.5 py-1 text-[10px] font-medium tracking-[0.25em] uppercase text-white/40 border border-white/10 mb-3 sm:mb-4">
-            Why Choose Us
-          </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white tracking-tight">
-            Built on Trust
-          </h2>
-          <p className="mt-2 sm:mt-3 text-sm sm:text-base text-white/30 max-w-lg">
-            We sell quality devices — and the service to match.
-          </p>
+          <ScrollReveal>
+            <span className="inline-block rounded-full px-3.5 py-1 text-[10px] font-medium tracking-[0.25em] uppercase text-white/40 border border-white/10 mb-3 sm:mb-4">
+              Why Choose Us
+            </span>
+          </ScrollReveal>
+          <ScrollReveal delay={0.1}>
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white tracking-tight">
+              Built on Trust
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={0.2}>
+            <p className="mt-2 sm:mt-3 text-sm sm:text-base text-white/30 max-w-lg">
+              We sell quality devices — and the service to match.
+            </p>
+          </ScrollReveal>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">

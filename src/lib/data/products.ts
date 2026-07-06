@@ -1,6 +1,7 @@
 export interface Product {
   id: string;
   name: string;
+  brand: string;
   tagline: string;
   specs: string;
   price: string;
@@ -17,6 +18,7 @@ export const products: Product[] = [
   {
     id: "novaphone-pro",
     name: "Galaxy S25 Ultra",
+    brand: "Samsung",
     tagline: "The pinnacle of performance",
     specs: "256GB • OLED Display • 5G",
     price: "$1,299",
@@ -30,6 +32,7 @@ export const products: Product[] = [
   {
     id: "novaphone-fold",
     name: "Galaxy Z Fold 7",
+    brand: "Samsung",
     tagline: "The future unfolds",
     specs: "512GB • Foldable OLED • 5G",
     price: "$1,899",
@@ -43,6 +46,7 @@ export const products: Product[] = [
   {
     id: "novaphone-x",
     name: "Pixel 10 Pro",
+    brand: "Google",
     tagline: "Designed to stand out",
     specs: "512GB • LTPO Display • 5G",
     price: "$1,499",
@@ -56,6 +60,7 @@ export const products: Product[] = [
   {
     id: "novaphone-air",
     name: "OnePlus 13",
+    brand: "OnePlus",
     tagline: "Lightness meets power",
     specs: "128GB • AMOLED • 5G",
     price: "$999",
@@ -66,11 +71,40 @@ export const products: Product[] = [
     accent: "bg-sky-400",
     tags: ["Lightweight", "5G"],
   },
+  {
+    id: "nothing-phone-3",
+    name: "Nothing Phone (3)",
+    brand: "Nothing",
+    tagline: "Pure. Transparent. Powerful.",
+    specs: "256GB • OLED • 5G",
+    price: "$749",
+    category: "Phone",
+    subcategory: "Android",
+    bezel: "from-zinc-100 to-zinc-300",
+    screen: "from-[#f5f5f7] via-[#e8e8ed] to-[#d1d1d6]",
+    accent: "bg-white",
+    tags: ["Unique", "Premium"],
+  },
+  {
+    id: "xiaomi-15-pro",
+    name: "Xiaomi 15 Pro",
+    brand: "Xiaomi",
+    tagline: "Innovation unleashed",
+    specs: "512GB • AMOLED • 5G",
+    price: "$1,099",
+    category: "Phone",
+    subcategory: "Android",
+    bezel: "from-zinc-700 to-zinc-900",
+    screen: "from-[#1a1a2e] via-[#16213e] to-[#0f3460]",
+    accent: "bg-blue-500",
+    tags: ["Flagship", "Camera"],
+  },
 
   // ── iPhones ──────────────────────────────────────
   {
     id: "iphone-pro-max",
     name: "iPhone 17 Pro Max",
+    brand: "Apple",
     tagline: "Maximum capability",
     specs: "1TB • LTPO OLED • 5G",
     price: "$1,699",
@@ -84,6 +118,7 @@ export const products: Product[] = [
   {
     id: "iphone-pro",
     name: "iPhone 17 Pro",
+    brand: "Apple",
     tagline: "Built for creativity",
     specs: "256GB • OLED Display • 5G",
     price: "$1,299",
@@ -97,6 +132,7 @@ export const products: Product[] = [
   {
     id: "iphone-air",
     name: "iPhone 17 Air",
+    brand: "Apple",
     tagline: "Brilliantly light",
     specs: "128GB • OLED • 5G",
     price: "$999",
@@ -110,6 +146,7 @@ export const products: Product[] = [
   {
     id: "iphone-se",
     name: "iPhone SE 4",
+    brand: "Apple",
     tagline: "Essential power",
     specs: "64GB • Retina • 5G",
     price: "$599",
@@ -120,11 +157,26 @@ export const products: Product[] = [
     accent: "bg-red-500",
     tags: ["Essential", "5G"],
   },
+  {
+    id: "iphone-17",
+    name: "iPhone 17",
+    brand: "Apple",
+    tagline: "Simply powerful",
+    specs: "128GB • OLED • 5G",
+    price: "$799",
+    category: "Phone",
+    subcategory: "iPhone",
+    bezel: "from-blue-500 to-blue-700",
+    screen: "from-[#1a1a2e] via-[#16213e] to-[#0f3460]",
+    accent: "bg-blue-500",
+    tags: ["Latest", "5G"],
+  },
 
   // ── Pro Series Watches ───────────────────────────
   {
     id: "novawatch-ultra",
     name: "Galaxy Watch Ultra",
+    brand: "Samsung",
     tagline: "Built for the extremes",
     specs: "49mm • Titanium • GPS + Cellular",
     price: "$799",
@@ -138,6 +190,7 @@ export const products: Product[] = [
   {
     id: "novawatch-pro",
     name: "Pixel Watch 3",
+    brand: "Google",
     tagline: "Professional grade",
     specs: "50mm • Titanium • GPS + Cellular",
     price: "$899",
@@ -151,6 +204,7 @@ export const products: Product[] = [
   {
     id: "novawatch-sport",
     name: "Galaxy Watch 7",
+    brand: "Samsung",
     tagline: "Engineered for athletes",
     specs: "44mm • Aluminum • GPS",
     price: "$349",
@@ -164,6 +218,7 @@ export const products: Product[] = [
   {
     id: "novawatch-titan",
     name: "Garmin Fenix 8",
+    brand: "Garmin",
     tagline: "Rugged endurance",
     specs: "47mm • Titanium • GPS + Cellular",
     price: "$699",
@@ -174,11 +229,40 @@ export const products: Product[] = [
     accent: "bg-zinc-400",
     tags: ["Rugged", "Outdoor"],
   },
+  {
+    id: "galaxy-watch-ultra-2",
+    name: "Galaxy Watch Ultra 2",
+    brand: "Samsung",
+    tagline: "Beyond the limit",
+    specs: "49mm • Titanium • GPS + Cellular",
+    price: "$899",
+    category: "Watch",
+    subcategory: "Pro Series",
+    bezel: "from-zinc-600 to-zinc-800",
+    screen: "from-[#1a1a2e] to-[#0f3460]",
+    accent: "bg-orange-500",
+    tags: ["Titanium", "Outdoor"],
+  },
+  {
+    id: "suunto-vertical",
+    name: "Suunto Vertical",
+    brand: "Suunto",
+    tagline: "Adventure-ready engineering",
+    specs: "49mm • Titanium • GPS",
+    price: "$649",
+    category: "Watch",
+    subcategory: "Pro Series",
+    bezel: "from-zinc-500 to-zinc-700",
+    screen: "from-[#1a1a2e] to-[#16213e]",
+    accent: "bg-zinc-400",
+    tags: ["Rugged", "Adventure"],
+  },
 
   // ── Essential Series Watches ─────────────────────
   {
     id: "novawatch-heritage",
     name: "Galaxy Watch Classic",
+    brand: "Samsung",
     tagline: "Timeless sophistication",
     specs: "40mm • Gold • GPS",
     price: "$1,099",
@@ -192,6 +276,7 @@ export const products: Product[] = [
   {
     id: "novawatch-classic",
     name: "Fossil Gen 7",
+    brand: "Fossil",
     tagline: "Timeless elegance redefined",
     specs: "42mm • Stainless Steel • GPS",
     price: "$599",
@@ -205,6 +290,7 @@ export const products: Product[] = [
   {
     id: "novawatch-elegance",
     name: "Huawei Watch GT 5",
+    brand: "Huawei",
     tagline: "Style meets substance",
     specs: "38mm • Rose Gold • GPS",
     price: "$749",
@@ -218,6 +304,7 @@ export const products: Product[] = [
   {
     id: "novawatch-air",
     name: "Galaxy Watch FE",
+    brand: "Samsung",
     tagline: "Your everyday companion",
     specs: "45mm • Aluminum • GPS",
     price: "$399",
@@ -227,5 +314,33 @@ export const products: Product[] = [
     screen: "from-[#f5f5f7] to-[#e8e8ed]",
     accent: "bg-blue-400",
     tags: ["Everyday", "Health"],
+  },
+  {
+    id: "withings-scanwatch",
+    name: "Withings ScanWatch",
+    brand: "Withings",
+    tagline: "Medical-grade wellness",
+    specs: "42mm • Stainless Steel • GPS",
+    price: "$499",
+    category: "Watch",
+    subcategory: "Essential Series",
+    bezel: "from-zinc-300 to-zinc-500",
+    screen: "from-[#f5f5f7] to-[#e8e8ed]",
+    accent: "bg-blue-500",
+    tags: ["Health", "Classic"],
+  },
+  {
+    id: "amazfit-balance",
+    name: "Amazfit Balance",
+    brand: "Amazfit",
+    tagline: "Balance body and mind",
+    specs: "46mm • Aluminum • GPS",
+    price: "$229",
+    category: "Watch",
+    subcategory: "Essential Series",
+    bezel: "from-zinc-200 to-zinc-400",
+    screen: "from-[#1a1a2e] to-[#16213e]",
+    accent: "bg-green-500",
+    tags: ["Fitness", "Value"],
   },
 ];

@@ -1,3 +1,5 @@
+import ScrollReveal from "@/components/ui/ScrollReveal";
+
 const info = [
   {
     label: "Address",
@@ -169,52 +171,62 @@ export default function VisitOurStore() {
       <div className="relative z-10 mx-auto max-w-[1440px] px-5 sm:px-6 lg:px-12 py-16 sm:py-20 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-20 items-center">
           <div>
-            <span className="inline-block rounded-full px-3.5 py-1 text-[10px] font-medium tracking-[0.25em] uppercase text-white/40 border border-white/10 mb-3 sm:mb-4">
-              Visit Our Store
-            </span>
-            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white tracking-tight mb-2 sm:mb-3">
-              Visit Our Store
-            </h2>
-            <p className="text-sm sm:text-base text-white/30 max-w-md mb-8 sm:mb-10 leading-relaxed">
-              Browse our full collection in person. Compare models side by side
-              and get advice from our team.
-            </p>
-
-            <div className="space-y-5 sm:space-y-6">
-              {info.map((item) => (
-                <InfoItem key={item.label} {...item} />
-              ))}
-            </div>
-
-            <a
-              href="https://maps.google.com/?q=12-A+Shahra-e-Benazir+Near+City+Hospital+Nawabshah+24160"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-3 rounded-full border border-white/[0.1] bg-white/[0.03] px-6 min-h-[48px] text-sm font-medium text-white/60 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-white/[0.08] hover:border-white/20 hover:text-white/90 active:scale-[0.97] mt-8 sm:mt-10"
-            >
-              <span>Get Directions</span>
-              <span className="flex items-center justify-center w-6 h-6 rounded-full bg-white/[0.06] text-white/40 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:bg-white/10 group-hover:text-white/70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-                <svg
-                  width="12"
-                  height="12"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                >
-                  <path
-                    d="M1 11L11 1M11 1H4.5M11 1V7.5"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+            <ScrollReveal>
+              <span className="inline-block rounded-full px-3.5 py-1 text-[10px] font-medium tracking-[0.25em] uppercase text-white/40 border border-white/10 mb-3 sm:mb-4">
+                Visit Our Store
               </span>
-            </a>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white tracking-tight mb-2 sm:mb-3">
+                Visit Our Store
+              </h2>
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+              <p className="text-sm sm:text-base text-white/30 max-w-md mb-8 sm:mb-10 leading-relaxed">
+                Browse our full collection in person. Compare models side by side
+                and get advice from our team.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.3}>
+              <div className="space-y-5 sm:space-y-6">
+                {info.map((item) => (
+                  <InfoItem key={item.label} {...item} />
+                ))}
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.4}>
+              <a
+                href="https://maps.google.com/?q=12-A+Shahra-e-Benazir+Near+City+Hospital+Nawabshah+24160"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 rounded-full border border-white/[0.1] bg-white/[0.03] px-6 min-h-[48px] text-sm font-medium text-white/60 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-white/[0.08] hover:border-white/20 hover:text-white/90 active:scale-[0.97] mt-8 sm:mt-10"
+              >
+                <span>Get Directions</span>
+                <span className="flex items-center justify-center w-6 h-6 rounded-full bg-white/[0.06] text-white/40 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:bg-white/10 group-hover:text-white/70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 11L11 1M11 1H4.5M11 1V7.5"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </ScrollReveal>
           </div>
 
-          <div className="animate-[fade-up_0.8s_cubic-bezier(0.32,0.72,0,1)_both]">
+          <ScrollReveal delay={0.15}>
             <MapMockup />
-          </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>
