@@ -109,7 +109,7 @@ export default function Navbar() {
                 <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5" />
               </svg>
             </div>
-            <span className="text-sm font-semibold tracking-tight text-white/90 hidden sm:block">
+            <span className="text-sm font-semibold tracking-tight text-white/90 block">
               NovaTech
             </span>
           </a>
